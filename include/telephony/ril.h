@@ -32,11 +32,7 @@ extern "C" {
 #endif
 
 #define RIL_VERSION 9     /* Current version */
-#ifdef LEGACY_RIL
 #define RIL_VERSION_MIN 2 /* Minimum RIL_VERSION supported */
-#else
-#define RIL_VERSION_MIN 6 /* Minimum RIL_VERSION supported */
-#endif
 #define RIL_QCOM_VERSION 3 /* Qualcomm internal RIL version */
 
 #define CDMA_ALPHA_INFO_BUFFER_LENGTH 64
