@@ -1111,6 +1111,13 @@ typedef struct
   int              pin1_replaced;   /* applicable to USIM, CSIM & ISIM */
   RIL_PinState     pin1;
   RIL_PinState     pin2;
+#ifdef QCOM_LEGACY_RIL
+  int              foo1;            // pin1_num_retries
+  int              foo2;            // puk1_num_retries
+  int              foo3;            // pin2_num_retries
+  int              foo4;            // puk2_num_retries
+  int              foo5;            // perso_unblock_retries
+#endif
 } RIL_AppStatus;
 
 /* Deprecated, use RIL_CardStatus_v6 */
