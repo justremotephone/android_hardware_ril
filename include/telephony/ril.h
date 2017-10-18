@@ -607,6 +607,9 @@ typedef struct {
              * clir == 2 on "CLIR suppression" (allow CLI presentation)
              */
     RIL_UUS_Info *  uusInfo;    /* NULL or Pointer to User-User Signaling Information */
+#ifdef QCOM_LEGACY_RIL
+    void* unknown;   /*needed for vendor ril */
+#endif
 } RIL_Dial;
 
 typedef struct {
